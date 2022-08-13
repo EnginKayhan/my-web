@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="name.css">
+    <title>Country</title>
+    <style>
+      body {
+        background-image: url("sky.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+<h2></h2>
+    <div class = "main">
+           <div class ="name">NORTH CYPRUS</div>
+           <div id ="subtxt">
+               by Engin Kayhan <br>
+              Student Number: 183300683
+           </div>
+       </div>
+       <hr>
+<p style="font-family:times new roman; font-size:130%">Northern Cyprus (Turkish: Kuzey Kıbrıs), officially the Turkish Republic of Northern Cyprus (TRNC; Turkish: Kuzey Kıbrıs Türk Cumhuriyeti, KKTC), is a de facto state that comprises the northeastern portion of the island of Cyprus. Recognised only by Turkey, Northern Cyprus is considered by all other states to be part of the Republic of Cyprus.
+
+Northern Cyprus extends from the tip of the Karpass Peninsula in the northeast to Morphou Bay, Cape Kormakitis and its westernmost point, the Kokkina exclave in the west. Its southernmost point is the village of Louroujina. A buffer zone under the control of the United Nations stretches between Northern Cyprus and the rest of the island and divides Nicosia, the island's largest city and capital of both sides</p> <br>
+Whole wikipedia page about Northern Cyprus: <a href="https://en.wikipedia.org/wiki/Northern_Cyprus"target="_blank"> Turkish Republic of Northern Cyprus </a> <br> <br>
+<img src="flag.png" alt="flag of north cyprus"width="500" height="250">
+<br> <br>
+<div style="text-align:left">
+  <button onclick="playPause()">Play/Pause</button>
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="KKTC.mp4" type="video/mp4">
+    <source src="KKTC.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+</div>
+<script>
+var myVideo = document.getElementById("video1");
+
+function playPause() {
+  if (myVideo.paused)
+    myVideo.play();
+  else
+    myVideo.pause();
+}
+
+function makeBig() {
+    myVideo.width = 560;
+}
+
+function makeSmall() {
+    myVideo.width = 320;
+}
+
+function makeNormal() {
+    myVideo.width = 420;
+}
+</script>
+
+<p>This is a video of North Cyprus Experience from YouTube. <a href="https://www.youtube.com/watch?v=qQmGMXgHQy4" target="_blank">Original Link</a>.</p>
+
+<nav>
+  <ul>
+    <li> <a href="About Me.html"> About Me </a> </li>
+    <li> <a href="Family.html"> Family </a> </li>
+    <li> <a href="Hobbies.html"> Hobbies </a> </li>
+    <li> <a href="My Life.html"> My Life </a> </li>
+    <li> <a href="homepage.html"> Home Page </a> </li>
+  </ul>
+
+</nav>
+  </body>
+</html>
